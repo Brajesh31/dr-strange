@@ -1,0 +1,113 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Doctor Strange Multiverse Portal | WebAR Experience by Brajesh Kumar</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Doctor Strange Multiverse Portal | WebAR Experience by Brajesh Kumar">
+  <meta name="description" content="An immersive WebAR experience featuring real-time hand tracking, magical portals, gesture-based spell casting, and Doctor Strange inspired visual effects. Built by Brajesh Kumar.">
+  <meta name="keywords" content="WebAR, XR, AR, Doctor Strange, MediaPipe, Three.js, Hand Tracking, AI, Augmented Reality, Gesture Recognition, Brajesh Kumar">
+  <meta name="author" content="Brajesh Kumar">
+  <meta name="theme-color" content="#ff7b00">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://brajesh31.com/">
+  <meta property="og:title" content="Doctor Strange Multiverse Portal | WebAR Experience by Brajesh Kumar">
+  <meta property="og:description" content="Summon portals, cast spells, and control magical energy with your hands using advanced WebAR technology.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/collidingScopes/stark-shapes/main/assets/siteOGImage.png">
+
+  <!-- Twitter / X -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://brajesh31.com/">
+  <meta property="twitter:title" content="Doctor Strange Multiverse Portal | WebAR Experience by Brajesh Kumar">
+  <meta property="twitter:description" content="Summon portals, cast spells, and control magical energy with your hands using advanced WebAR technology.">
+  <meta property="twitter:image" content="https://raw.githubusercontent.com/collidingScopes/stark-shapes/main/assets/siteOGImage.png">
+
+  <!-- Analytics -->
+  <script defer src="https://cloud.umami.is/script.js"
+          data-website-id="eb59c81c-27cb-4e1d-9e8c-bfbe70c48cd9"></script>
+
+</head>
+
+<body>
+
+<!-- Webcam Feed -->
+<video class="input_video"></video>
+
+<!-- MediaPipe Canvas -->
+<canvas class="output_canvas" width="640px" height="360px"></canvas>
+
+<!-- Three.js Scene -->
+<div id="container"></div>
+
+<!-- Glow Effect -->
+<div class="glow"></div>
+
+<!-- Experience Name -->
+<div id="patternName">
+  Doctor Strange Multiverse Portal
+</div>
+
+<!-- Instructions -->
+<div id="instructions">
+  🖐️ Open your palm to summon a magic circle<br>
+  🤏 Pinch fingers to charge mystical energy<br>
+  🙌 Join both hands to activate a dimensional portal<br>
+  ✨ Separate hands to expand magical mandalas<br>
+  🔥 Unlock advanced spell effects through gestures<br>
+  📷 Allow webcam access to begin
+</div>
+
+<!-- Social Links -->
+<div id="instagram-link">
+  <a href="https://github.com/Brajesh31" target="_blank">GitHub</a>
+  <a href="https://www.linkedin.com/in/brajesh-kumar-9b58651a8/" target="_blank">LinkedIn</a>
+  <a href="https://x.com/lord_Brajesh" target="_blank">X</a>
+</div>
+
+<!-- Portfolio Link -->
+<div id="coffee-link">
+  <a href="https://brajesh31.com/" target="_blank">
+    Built by Brajesh Kumar • WebAR • AI • XR Developer
+  </a>
+</div>
+
+<!-- dat.GUI -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.9/dat.gui.min.js"></script>
+
+<!-- Three.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+<!-- Shaders -->
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/CopyShader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/LuminosityHighPassShader.js"></script>
+
+<!-- Post Processing -->
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/EffectComposer.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/RenderPass.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/ShaderPass.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/UnrealBloomPass.js"></script>
+
+<!-- Custom Shader -->
+<script src="chromatic-shader.js"></script>
+
+<!-- MediaPipe -->
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+
+<!-- Project Scripts -->
+<script src="geometry.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
+
